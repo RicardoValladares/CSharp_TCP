@@ -1,0 +1,16 @@
+c:\users\nn\documents\visual studio 2012\Projects\SocketServer\SocketServer\bin\Debug\SocketServer.exe.config
+c:\users\nn\documents\visual studio 2012\Projects\SocketServer\SocketServer\bin\Debug\SocketServer.exe
+c:\users\nn\documents\visual studio 2012\Projects\SocketServer\SocketServer\bin\Debug\SocketServer.pdb
+c:\users\nn\documents\visual studio 2012\Projects\SocketServer\SocketServer\obj\Debug\SocketServer.Form1.resources
+c:\users\nn\documents\visual studio 2012\Projects\SocketServer\SocketServer\obj\Debug\SocketServer.Properties.Resources.resources
+c:\users\nn\documents\visual studio 2012\Projects\SocketServer\SocketServer\obj\Debug\SocketServer.csproj.GenerateResource.Cache
+c:\users\nn\documents\visual studio 2012\Projects\SocketServer\SocketServer\obj\Debug\SocketServer.exe
+c:\users\nn\documents\visual studio 2012\Projects\SocketServer\SocketServer\obj\Debug\SocketServer.pdb
+C:\Users\nn\Desktop\SocketServer\SocketServer\bin\Debug\SocketServer.exe.config
+C:\Users\nn\Desktop\SocketServer\SocketServer\obj\Debug\SocketServer.exe
+C:\Users\nn\Desktop\SocketServer\SocketServer\obj\Debug\SocketServer.pdb
+C:\Users\nn\Desktop\SocketServer\SocketServer\bin\Debug\SocketServer.exe
+C:\Users\nn\Desktop\SocketServer\SocketServer\bin\Debug\SocketServer.pdb
+C:\Users\nn\Desktop\SocketServer\SocketServer\obj\Debug\SocketServer.Form1.resources
+C:\Users\nn\Desktop\SocketServer\SocketServer\obj\Debug\SocketServer.Properties.Resources.resources
+C:\Users\nn\Desktop\SocketServer\SocketServer\obj\Debug\SocketServer.csproj.GenerateResource.Cache
