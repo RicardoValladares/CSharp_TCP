@@ -50,6 +50,7 @@
             // 
             this.puerto.Location = new System.Drawing.Point(59, 40);
             this.puerto.Name = "puerto";
+            this.puerto.ReadOnly = true;
             this.puerto.Size = new System.Drawing.Size(244, 20);
             this.puerto.TabIndex = 1;
             this.puerto.Text = "9000";
