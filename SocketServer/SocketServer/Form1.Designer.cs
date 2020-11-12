@@ -40,43 +40,48 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Location = new System.Drawing.Point(18, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 13);
+            this.label1.Size = new System.Drawing.Size(28, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "IP:";
             // 
             // puerto
             // 
-            this.puerto.Location = new System.Drawing.Point(59, 40);
+            this.puerto.Location = new System.Drawing.Point(88, 62);
+            this.puerto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.puerto.Name = "puerto";
             this.puerto.ReadOnly = true;
-            this.puerto.Size = new System.Drawing.Size(244, 20);
+            this.puerto.Size = new System.Drawing.Size(364, 26);
             this.puerto.TabIndex = 1;
-            this.puerto.Text = "9000";
+            this.puerto.Text = "9090";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 43);
+            this.label2.Location = new System.Drawing.Point(18, 66);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.Size = new System.Drawing.Size(60, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Puerto:";
             // 
             // ip
             // 
-            this.ip.Location = new System.Drawing.Point(59, 12);
+            this.ip.Location = new System.Drawing.Point(88, 18);
+            this.ip.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ip.Name = "ip";
-            this.ip.Size = new System.Drawing.Size(244, 20);
+            this.ip.Size = new System.Drawing.Size(364, 26);
             this.ip.TabIndex = 3;
             this.ip.Text = "127.0.0.1";
             // 
             // encender
             // 
-            this.encender.Location = new System.Drawing.Point(13, 73);
+            this.encender.Location = new System.Drawing.Point(20, 112);
+            this.encender.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.encender.Name = "encender";
-            this.encender.Size = new System.Drawing.Size(118, 23);
+            this.encender.Size = new System.Drawing.Size(177, 35);
             this.encender.TabIndex = 4;
             this.encender.Text = "Encender Server";
             this.encender.UseVisualStyleBackColor = true;
@@ -85,9 +90,10 @@
             // apagar
             // 
             this.apagar.Enabled = false;
-            this.apagar.Location = new System.Drawing.Point(198, 73);
+            this.apagar.Location = new System.Drawing.Point(297, 112);
+            this.apagar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.apagar.Name = "apagar";
-            this.apagar.Size = new System.Drawing.Size(105, 23);
+            this.apagar.Size = new System.Drawing.Size(158, 35);
             this.apagar.TabIndex = 5;
             this.apagar.Text = "Apagar Server";
             this.apagar.UseVisualStyleBackColor = true;
@@ -95,18 +101,19 @@
             // 
             // mensaje
             // 
-            this.mensaje.Location = new System.Drawing.Point(12, 113);
+            this.mensaje.Location = new System.Drawing.Point(18, 174);
+            this.mensaje.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.mensaje.Multiline = true;
             this.mensaje.Name = "mensaje";
             this.mensaje.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.mensaje.Size = new System.Drawing.Size(291, 136);
+            this.mensaje.Size = new System.Drawing.Size(434, 207);
             this.mensaje.TabIndex = 6;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(313, 261);
+            this.ClientSize = new System.Drawing.Size(470, 402);
             this.Controls.Add(this.mensaje);
             this.Controls.Add(this.apagar);
             this.Controls.Add(this.encender);
@@ -115,6 +122,7 @@
             this.Controls.Add(this.puerto);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "SERVER SOCKET";

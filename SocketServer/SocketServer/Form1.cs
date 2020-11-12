@@ -20,7 +20,7 @@ namespace SocketServer
         private bool serving = false;
         private TcpListener server;
         private TcpClient client = new TcpClient();
-        private IPEndPoint ipendpoint = new IPEndPoint(IPAddress.Any, 9000);
+        private IPEndPoint ipendpoint = new IPEndPoint(IPAddress.Any, 9090);
         private List<Connection> list = new List<Connection>();
         Connection con;
 
