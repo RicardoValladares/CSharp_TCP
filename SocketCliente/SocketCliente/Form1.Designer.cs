@@ -40,18 +40,20 @@
             // 
             // mensaje
             // 
-            this.mensaje.Location = new System.Drawing.Point(10, 123);
+            this.mensaje.Location = new System.Drawing.Point(15, 189);
+            this.mensaje.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.mensaje.Multiline = true;
             this.mensaje.Name = "mensaje";
             this.mensaje.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.mensaje.Size = new System.Drawing.Size(291, 136);
+            this.mensaje.Size = new System.Drawing.Size(434, 207);
             this.mensaje.TabIndex = 13;
             // 
             // enviar
             // 
-            this.enviar.Location = new System.Drawing.Point(11, 94);
+            this.enviar.Location = new System.Drawing.Point(16, 145);
+            this.enviar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.enviar.Name = "enviar";
-            this.enviar.Size = new System.Drawing.Size(290, 23);
+            this.enviar.Size = new System.Drawing.Size(435, 35);
             this.enviar.TabIndex = 11;
             this.enviar.Text = "Enviar Data";
             this.enviar.UseVisualStyleBackColor = true;
@@ -59,59 +61,65 @@
             // 
             // ip
             // 
-            this.ip.Location = new System.Drawing.Point(68, 9);
+            this.ip.Location = new System.Drawing.Point(102, 14);
+            this.ip.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ip.Name = "ip";
-            this.ip.Size = new System.Drawing.Size(235, 20);
+            this.ip.Size = new System.Drawing.Size(350, 26);
             this.ip.TabIndex = 10;
             this.ip.Text = "127.0.0.1";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 40);
+            this.label2.Location = new System.Drawing.Point(18, 62);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.Size = new System.Drawing.Size(60, 20);
             this.label2.TabIndex = 9;
             this.label2.Text = "Puerto:";
             // 
             // puerto
             // 
-            this.puerto.Location = new System.Drawing.Point(68, 37);
+            this.puerto.Location = new System.Drawing.Point(102, 57);
+            this.puerto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.puerto.Name = "puerto";
-            this.puerto.Size = new System.Drawing.Size(235, 20);
+            this.puerto.Size = new System.Drawing.Size(350, 26);
             this.puerto.TabIndex = 8;
-            this.puerto.Text = "9000";
+            this.puerto.Text = "9090";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(18, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 13);
+            this.label1.Size = new System.Drawing.Size(28, 20);
             this.label1.TabIndex = 7;
             this.label1.Text = "IP:";
             // 
             // textocliente
             // 
-            this.textocliente.Location = new System.Drawing.Point(68, 68);
+            this.textocliente.Location = new System.Drawing.Point(102, 105);
+            this.textocliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textocliente.Name = "textocliente";
-            this.textocliente.Size = new System.Drawing.Size(233, 20);
+            this.textocliente.Size = new System.Drawing.Size(348, 26);
             this.textocliente.TabIndex = 14;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 71);
+            this.label3.Location = new System.Drawing.Point(18, 109);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 13);
+            this.label3.Size = new System.Drawing.Size(73, 20);
             this.label3.TabIndex = 15;
             this.label3.Text = "Mensaje:";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(313, 278);
+            this.ClientSize = new System.Drawing.Size(470, 428);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textocliente);
             this.Controls.Add(this.mensaje);
@@ -121,6 +129,7 @@
             this.Controls.Add(this.puerto);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "SOCKET CLIENTE";
