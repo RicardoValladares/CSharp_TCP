@@ -1,5 +1,5 @@
 # CSharp_TCP
-Similar a Java Socket
+Similar a comunicacion por Socket
 
 
 Aqui capturas de pantalla:
