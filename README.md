@@ -1,5 +1,5 @@
 # CSharp_TCP
-Similar a comunicacion por Socket
+Hecho en C# NetFramework 4.5
 
 
 Aqui capturas de pantalla:
