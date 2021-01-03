@@ -1,4 +1,4 @@
-# CSharp_TCP
+# CSharp TCP
 Hecho en C# Net Framework 4.5
 
 ![Servidor](https://raw.githubusercontent.com/RicardoValladares/CSharp_TCP/master/SocketServer.PNG)
