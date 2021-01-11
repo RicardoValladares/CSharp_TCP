@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,48 +13,43 @@ using Microsoft.VisualBasic;
 using System.IO;
 using System.Threading;
 
-namespace SocketServer
-{
-    public partial class Form1 : Form
-    {
+namespace SocketServer{
+    public partial class Form1 : Form{
+        /*objetos a usar*/
         private bool serving = false;
         private TcpListener server;
         private TcpClient client = new TcpClient();
         private IPEndPoint ipendpoint = new IPEndPoint(IPAddress.Any, 9090);
         private List<Connection> list = new List<Connection>();
         Connection con;
-
-
-        private struct Connection
-        {
+        private struct Connection{
             public NetworkStream stream;
             public StreamWriter streamw;
             public StreamReader streamr;
             public string data;
         }
-        
-        public Form1()
-        {
+        /*inicializamos formulario*/
+        public Form1(){
             InitializeComponent();
         }
-
-
-
-
-        private void encender_Click(object sender, EventArgs e)
-        {
+        /*boton para encender el servidor*/
+        private void encender_Click(object sender, EventArgs e){
             StartServer();
+        }
+        /*boton para apagar el servidor*/
+        private void apagar_Click(object sender, EventArgs e){
+            serving = false;
+            server.Stop();
+            mensaje.Text = "Servidor Apagado";
+            encender.Enabled = true;
+            apagar.Enabled = false;
         }
 
 
-
-
-        private void StartServer()
-        {
-            Thread hilo = new Thread(delegate()
-            {
-                try
-                {
+        /*metodo para encender el servidor*/
+        private void StartServer(){
+            Thread hilo = new Thread(delegate(){
+                try{
                     server = new TcpListener(ipendpoint);
                     server.Start();
                     serving = true;
@@ -66,28 +61,21 @@ namespace SocketServer
                 }
                 catch {
                     this.Invoke(new Action(() => { mensaje.Text = "Conflicto en Puerto o IP"; }));
-                    this.Invoke(new Action(() =>
-                    {
+                    this.Invoke(new Action(() => {
                         encender.Enabled = true;
                         apagar.Enabled = false;
                     }));
                 }
-
-                
-
-
-
-                while (serving)
-                {
-                    try
-                    {
+                //mientras el servidor este encendido entrara al bucle
+                while (serving){
+                    try{
                         client = server.AcceptTcpClient();
-
+                        //aceptamos nueva conexion cliente
                         con = new Connection();
                         con.stream = client.GetStream();
                         con.streamr = new StreamReader(con.stream);
                         con.streamw = new StreamWriter(con.stream);
-
+                        //recibimos el mensaje y lo respondemos
                         con.data = con.streamr.ReadLine();
                         list.Add(con);
                         string cliente, servidor;
@@ -95,8 +83,8 @@ namespace SocketServer
                         servidor = "RESPUESTA AUTOMATICA";
                         this.Invoke(new Action(() => { mensaje.Text = mensaje.Text + Environment.NewLine + cliente; }));
                         this.Invoke(new Action(() => { mensaje.Text = mensaje.Text + Environment.NewLine + "SERVER: " + servidor + Environment.NewLine; }));
-
                         con.streamw.WriteLine(servidor);
+                        //cerramos conexion
                         con.streamw.Flush();
                         con.stream.Close();
                         list.Remove(con);
@@ -108,22 +96,6 @@ namespace SocketServer
             });
             hilo.Start();
         }
-
-        private void apagar_Click(object sender, EventArgs e)
-        {
-            serving = false;
-            server.Stop();
-            mensaje.Text = "Servidor Apagado";
-            encender.Enabled = true;
-            apagar.Enabled = false;
-        }
-
-
-
-        
-            
-            
-
 
 
     }
